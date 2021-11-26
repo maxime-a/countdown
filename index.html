@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div class="until" id="MyCountdown">
+        <div class="until_full" id="MyCountdown">
             <div class="until__component">
                 <div class="until__numeric until__numeric--days">00</div>
                 <div class="until__unit">Days</div>
@@ -25,6 +25,22 @@
                 <div class="until__unit">Seconds</div>
             </div>
             <div class="until__event">Until --</div>
+        </div>
+        <div class="global">
+            <div class="until_weeks" id="MyCountdown2">
+                <div class="until__component">
+                    <div class="until__numeric until__numeric--weeks">00</div>
+                    <div class="until__unit">Weeks</div>
+                </div>
+                <div class="until__event">Until --</div>
+            </div>
+            <div class="until_weeks" id="MyCountdown3">
+                <div class="until__component">
+                    <div class="until__numeric until__numeric--weekends">00</div>
+                    <div class="until__unit">Weekends</div>
+                </div>
+                <div class="until__event">Until --</div>
+            </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/plugin/duration.min.js"></script>
