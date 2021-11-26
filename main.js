@@ -38,9 +38,7 @@ function activateCountdownWeekends(element, dateString){
         numberOfWeekends = Math.floor(duration.asDays()/7);
         if((now.day()+1)%7+duration.asDays()%7 >= 8){numberOfWeekends+=1};
 
-        element.querySelector(".until__numeric--weekends").textContent = numberOfWeekends.toFixed(0).toString().padStart(2,"0");    
-        console.log((now.day()+1)%7+duration.asDays()%7);
-        console.log(numberOfWeekends);
+        element.querySelector(".until__numeric--weekends").textContent = numberOfWeekends.toFixed(0).toString().padStart(2,"0"); 
     },250);
 }
 
