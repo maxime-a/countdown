@@ -42,6 +42,6 @@ function activateCountdownWeekends(element, dateString){
     },250);
 }
 
-activateCountdown(document.getElementById("MyCountdown"), "2022-01-22");
-activateCountdownWeeks(document.getElementById("MyCountdown2"), "2022-01-22");
-activateCountdownWeekends(document.getElementById("MyCountdown3"), "2022-01-22");
+activateCountdown(document.getElementById("MyCountdown"), "2023-01-27");
+activateCountdownWeeks(document.getElementById("MyCountdown2"), "2023-01-27");
+activateCountdownWeekends(document.getElementById("MyCountdown3"), "2023-01-27");
