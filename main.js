@@ -2,7 +2,7 @@ dayjs.extend(dayjs_plugin_duration);
 
 function activateCountdown(element, dateString){
     const targetDate = dayjs(dateString);
-    element.querySelector(".until__event").textContent = `Until ${ targetDate.format("D MMMM YYYY")}`;
+    element.querySelector(".until__event").textContent = `Until ${ targetDate.format("D MMMM YYYY HH:mm:ss")}`;
 
     setInterval(()=>{
         const now = dayjs();
@@ -42,6 +42,6 @@ function activateCountdownWeekends(element, dateString){
     },250);
 }
 
-activateCountdown(document.getElementById("MyCountdown"), "2023-01-27");
-activateCountdownWeeks(document.getElementById("MyCountdown2"), "2023-01-27");
-activateCountdownWeekends(document.getElementById("MyCountdown3"), "2023-01-27");
+activateCountdown(document.getElementById("MyCountdown"), "2023-01-27 15:00:00");
+activateCountdownWeeks(document.getElementById("MyCountdown2"), "2023-01-27 15:00:00");
+activateCountdownWeekends(document.getElementById("MyCountdown3"), "2023-01-27 15:00:00");
